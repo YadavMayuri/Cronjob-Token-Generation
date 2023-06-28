@@ -63,7 +63,7 @@ app.post('/login', (req, res) => {
     console.log(req.body.email)
     console.log(req.body.password)
     // db store 
-    res.send(`Your email ${req.body.email} and passsword is ${req.body.password}`)
+    res.send(`Your email is ${req.body.email} and passsword is ${req.body.password}`)
 })
 
 
