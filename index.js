@@ -55,7 +55,7 @@ app.get("/urlencoded", (req, res) => {
 })
 
 
-app.get("/urllogin", (req, res) => {
+app.get("/urlencoded", (req, res) => {
     return res.sendFile(__dirname + '/public/login.html');
 })
 
