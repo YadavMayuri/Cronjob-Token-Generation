@@ -56,13 +56,7 @@ app.get("/urlencoded", (req, res) => {
 
 
 app.get("/urllogin", (req, res) => {
-    res.send(
-        `<form method='post' action='/login'>
-            <input name="email" placeholder="text" />
-            <input name="password"  placeholder="password"/>
-            <input type='submit' value="LOgin"/>
-        </form>`
-    )
+    return res.sendFile(__dirname + '/public/login.html');
 })
 
 app.post('/login', (req, res) => {
