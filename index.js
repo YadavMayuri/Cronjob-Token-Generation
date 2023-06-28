@@ -54,6 +54,17 @@ app.get("/urlencoded", (req, res) => {
     )
 })
 
+
+app.get("/urllogin", (req, res) => {
+    res.send(
+        `<form method='post' action='/login'>
+            <input name="email" placeholder="text" />
+            <input name="password"  placeholder="password"/>
+            <input type='submit' value="LOgin"/>
+        </form>`
+    )
+})
+
 app.post('/login', (req, res) => {
     console.log(req.body.email)
     console.log(req.body.password)
